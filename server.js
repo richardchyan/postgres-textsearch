@@ -7,6 +7,8 @@ import dotenv from 'dotenv'
 const app = express()
 app.use(cors())
 
+__dirname = path.resolve()
+
 const PORT = process.env.PORT || 5000
 
 // app.get('/', (req, res) => {
