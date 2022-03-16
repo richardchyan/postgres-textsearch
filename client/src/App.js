@@ -9,7 +9,7 @@ function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:5000/people/?name=${name}`)
+      const response = await fetch(`https://postgres-search.herokuapp.com/people/?name=${name}`)
       const data = await response.json()
       setPeople(data)
     } catch (error) {

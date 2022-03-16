@@ -7,8 +7,11 @@ app.use(cors())
 
 const PORT = process.env.PORT || 5000
 
-//routes
+app.get('/', (req, res) => {
+   res.send('database live')
+} )
 
+//routes
 app.get('/people', async(req, res) => {
 
    try {
